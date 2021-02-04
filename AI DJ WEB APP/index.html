@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AI DJ WEB APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body background="background.jpg" style="background-size: cover;">
+<center>
+  	<h1>AI DJ WEB APP</h1>
+        <hr>
+        <center>
+            <div class = "col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+                <span>NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. 
+                Move your right-hand wrist up and down for increasing and decreasing the speed</span>
+              <br>
+            </div>
+            <div class="div_speed" style="float: left;">
+                <img src="disk.gif" class="div_speed_img">
+                <br>
+                <h3 class="btn btn-warning" id="speed">Speed</h3>
+            </div>
+            <div class="div_volume" style="float: right;">
+                <img src="disk.gif" class="div_volume_img">
+                <br>
+                <h3 class="btn btn-warning" id="volume">Volume</h3>
+            </div>
+
+            <button class="btn btn-info play_button" onclick="play();">Play</button>
+            <button class="btn btn-info pause_button" onclick="pause();">Pause</button>
+            
+            <div class = "copyright_footer">
+              Developed by: Anuradha Kaushik
+            </div>
+        </center>
+</center>
+
+<script src="main.js"></script>
+</body>
+</html>
